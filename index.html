@@ -1,1 +1,170 @@
-hello
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shantao website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const elementRect = targetElement.getBoundingClientRect();
+                    const scrollPosition = elementRect.top + window.scrollY - (window.innerHeight / 2) + (elementRect.height / 2);
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#why-and-how">Why and how</a></li>
+            <li><a href="#hobbies">My hobbies</a></li>
+            <li><a href="#sport">Sport</a></li>
+            <li><a href="#culture-and-background">Culture and background</a></li>
+        </ul>
+    </nav>
+    <div id="hero-section">
+        <h1 class="title">My website</h1>
+        <h1 class="title">-Shantao Meng</h1>
+    </div>
+
+    <div id="main-section">
+        <!--Introduction-->
+        <div class="paragraph" id="intro">
+            <h1 class="header">Introduction</h1>
+
+            <p>
+                Hi, I'm Shantao! Welcome to my personal website where you will learn more about me, my hobbies,
+                interests,
+                and sports.
+            </p>
+
+            <p>
+                I am passionate about technology, computers, and programming, as well as online planespotting and WW2
+                history. I am fascinated in creating DIY projects on my computer with coding languages such as HTML,
+                CSS,
+                and Python. I also like making stuff out of electronics, namely circuits and welding. In my spare time,
+                I
+                enjoy playing video games, watching youtube videos, eating, and sleeping, although I do play some sports
+                once in a while.
+            </p>
+        </div>
+
+        <div class="image">
+            
+            <img src="https://media.istockphoto.com/id/1501791585/vector/group-of-diverse-young-men-wave-their-hands-in-welcoming-gesture-happy-persons-hold-greeting.jpg?s=612x612&w=0&k=20&c=AHiu86YNoZsjmDd7wRTHoJnBFl1yxX7lAbnm58r5eHk=">
+        </div>
+
+        <!--why and how-->
+        <div class="paragraph" id="why-and-how">
+            <h1 class="header">Why and how?</h1>
+
+            <p>
+                Why? I made this website because I just wanted to develop my skills in web development as well as
+                gaining
+                some experience in coding projects on my computer. Also, making this website was really hard and
+                challenging, especially the code. I chose this specific topic because writing about myself was just the
+                easiest topic out of every other. By the way, the website text isn't all of my personal information. Why
+                would I leak my personal address on the web?
+
+            </p>
+        </div>
+
+        <!--hobbies-->
+        <div class="paragraph" id="hobbies">
+            <h1 class="header">Hobbies</h1>
+
+
+            <p>
+                I have some unusual hobbies:
+            <ul>
+                <li>Online plane spotting</li>
+                <li>Coding</li>
+                <li>Gaming</li>
+                <li>Welding</li>
+            </ul>
+            </p>
+
+            <p>
+                I like playing online games such as Roblox and Geo-fs (which is a flight simulator). I find first person
+                shooter games entertaining or combat games.
+            </p>
+
+            <p>
+                I like learning how to code as a skill, since we probably need it in the future as technology becomes
+                more
+                complicated and everyone starts using it. I am currently studying computer programming languages such as
+                Python, HTML, and CSS, although I would like to touch on the basics of other languages as I improve.
+                Something interesting about me is that, in the field of computer sciences, I am also incredibly
+                interested
+                in the specific topic of AI. AI is very gripping because it is more powerful than ever and you can do
+                LOTS
+                of stuff on it, but I am only beginning to learn how to actually use it productively.
+            </p>
+
+            <p>
+                I recently started learning about circuits and I find them very interesting. I have ordered a couple DIY
+                welding projects and
+            </p>
+            <p>
+                For my hobby of online planespotting, I don't do as much as before.
+            </p>
+
+            <p>
+                For welding, I buy welding kits and solder them. At the end, the result is a cool looking circuit board
+                that
+                can do something cool.
+            </p>
+
+        </div>
+
+        <!--sport-->
+        <div class="paragraph" id="sport">
+            <h1 class="header">Sport</h1>
+
+            <p>
+                I play sports such as basketball, but I also know how to swim. I like playing ice hockey. I can play
+                badminton, although I'm not very good at it. I occasionally play sports, preferably in the evenings when
+                I
+                have some time. I also enjoy the sport of sleeping where I lie on my bed and gaze at the ceiling almost
+                always listening to an audio book, as well as how the sport of eating and drinking satisfies me.
+
+            </p>
+        </div>
+
+        <!--culture and background-->
+        <div class="paragraph" id="culture-and-background">
+            <h1 class="header">Culture and background</h1>
+
+            <p>
+                As you may know, I'm from this great country called China. I come from the north eastern parts and used
+                to
+                live in Liao Ling {province}, Shenyang {city}, for 7 ½ years so I know how to speak some
+                mandarin.
+
+            </p>
+        </div>
+
+        <!--conclusion-->
+        <h1 id="thankyou">Thank you for your time!</h1>
+
+        <button id="scroll-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back up top</button>
+    </div>
+</body>
+
+</html>

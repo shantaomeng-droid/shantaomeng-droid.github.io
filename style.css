@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+
+.title {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 70px;   
+    border-radius: 1000px;
+    font-style: normal;
+    font-family: ui-rounded, 'Arial Rounded MT Bold', sans-serif;
+    color: snow;
+    padding: 100px; 
+    width: fit-content;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+
+
+#hero-section {
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 1200px;
+    background-image: url("hanson-lu-Q36BvLGdOAg-unsplash.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+.p {
+    margin: 20px 0;
+}
+
+.header {
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#FFD580;
+}
+
+.paragraph {
+    padding: 75px;
+    /* justify-content: center; */
+    backdrop-filter: blur(12px);
+    color: burlywood;
+    background-color: rgba(0, 0, 0, 0.12);
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.8);
+    align-items: center;
+    text-align: left;
+    font-size: xx-large;
+    max-width: 1000px;
+    border-radius: 85px;
+    margin: 0;
+    margin: 0 auto;
+}
+
+.image {
+    background: rgba(145, 143, 143, 0.6);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(223, 221, 221,4);
+    border: 1px solid rgba(0, 0, 0, 0, 4);
+    padding: 30px;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.image img {
+    border-radius: 20px;
+
+}
+
+.image:hover {
+    background-color: rgb(110, 28, 28);
+    transform: scale(1.05);
+}
+
+.container ul {
+    text-align: left;
+
+}
+
+.container li {
+    margin: 10px 0;
+}
+
+#main-section {
+    background-image: url(https://images.unsplash.com/photo-1476820865390-c52aeebb9891?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-attachment: fixed;
+}
+
+
+.navbar a {
+    color: wheat;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    transition-duration: 0.5s;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+    z-index: 999;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    font-size: large;
+}
+
+img {
+    border: 3px solid rgba(0, 0, 0, 0, 4);
+}
+
+#thankyou {
+    font-size: xx-large;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    color: green;
+}
+
+#scroll-up {
+    background-color: red;
+    margin-bottom: 500px;
+    padding: 20px;
+    font-size: 40px;
+    color: whitesmoke;
+    border-radius: 100px;
+    text-align: center;
+    box-shadow: 10px;
+
+}
+
+#scroll-up:hover {
+    background-color: darkkhaki;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    color: wheat;
+    transition-duration: 0.4s;
+}
