@@ -147,10 +147,11 @@ img {
 
 #thankyou {
     font-size: xx-large;
-    margin-top: 70px;
-    margin-bottom: 200px;
+    margin: 0 auto;
     color: green;
-    border: #FFDA29;
+    padding: 10px;
+    background: #FFDA29;
+    width: fit-content;
 }
 
 #scroll-up {
